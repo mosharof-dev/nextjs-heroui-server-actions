@@ -1,7 +1,7 @@
 import { Card, Link } from "@heroui/react";
 
 const  BookCard = ({ task}) => {
-  // 1. JSON data theke properties gulo destructure kore nilam
+
   const { 
     title, 
     author, 
@@ -55,13 +55,10 @@ const  BookCard = ({ task}) => {
       <Card.Footer className="mt-4">
         <Link
           href={inStock ? "/checkout" : "#"}
-          className={`w-full text-center py-2.5 rounded-xl font-medium transition ${
-            inStock 
-              ? "bg-primary text-white hover:bg-primary/90" 
-              : "bg-gray-200 text-gray-500 cursor-not-allowed pointer-events-none"
+          className={`w-full text-center py-2.5 rounded-xl font-medium transition 
           }`}
         >
-          {inStock ? "Add to Cart" : "Out of Stock"}
+          Stock
         </Link>
       </Card.Footer>
 

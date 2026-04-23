@@ -2,6 +2,7 @@ import React from 'react';
 import getTaskData from '../lib/tasks';
 import BookCard from '@/Components/TaskCard';
 import { AddATask } from '@/Components/AddATask';
+import { createATask } from '../lib/actions';
 
 
 
@@ -11,7 +12,7 @@ const TaskPage = async() => {
     return (
         <div>
             <h2>Task: {data.length} </h2>
-            <AddATask/>
+            <AddATask createATask={createATask} />
             <div className=' grid grid-cols-4 gap-4 p-12'>
                 {
                     data.map(task => <BookCard key={task.id} task={task} />)
@@ -21,4 +22,4 @@ const TaskPage = async() => {
     );
 };
 
-export default TaskPage;
+export default TaskPage ;
