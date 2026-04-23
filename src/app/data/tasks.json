@@ -1,0 +1,46 @@
+[
+  {
+    "id": "b1",
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "category": "Self Development",
+    "price": 350,
+    "rating": 4.8,
+    "publishedYear": 2018,
+    "inStock": true,
+    "description": "A practical guide to building good habits and breaking bad ones."
+  },
+  {
+    "id": "b2",
+    "title": "Deep Work",
+    "author": "Cal Newport",
+    "category": "Productivity",
+    "price": 420,
+    "rating": 4.7,
+    "publishedYear": 2016,
+    "inStock": true,
+    "description": "Focus without distraction on meaningful work."
+  },
+  {
+    "id": "b3",
+    "title": "Clean Code",
+    "author": "Robert C. Martin",
+    "category": "Programming",
+    "price": 550,
+    "rating": 4.9,
+    "publishedYear": 2008,
+    "inStock": false,
+    "description": "A handbook of agile software craftsmanship."
+  },
+  {
+    "id": "b4",
+    "title": "You Don’t Know JS",
+    "author": "Kyle Simpson",
+    "category": "Programming",
+    "price": 480,
+    "rating": 4.6,
+    "publishedYear": 2015,
+    "inStock": true,
+    "description": "Deep dive into core mechanisms of JavaScript."
+  }
+]
