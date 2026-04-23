@@ -1,28 +1,71 @@
-// import {CircleDollar} from "@gravity-ui/icons";
-import {Card, Link} from "@heroui/react";
+import { Card, Link } from "@heroui/react";
 
-export function TaskCard() {
+const  BookCard = ({ task}) => {
+  // 1. JSON data theke properties gulo destructure kore nilam
+  const { 
+    title, 
+    author, 
+    category, 
+    price, 
+    rating, 
+    publishedYear, 
+    inStock, 
+    description 
+  } = task;
+  
   return (
-    <Card className="w-100">
-      {/* <CircleDollar aria-label="Dollar sign icon" className="text-primary size-6" role="img" /> */}
-      <Card.Header>
-        <Card.Title>Become an Acme Creator!</Card.Title>
-        <Card.Description>
-          Visit the Acme Creator Hub to sign up today and start earning credits from your fans and
-          followers.
-        </Card.Description>
+    <Card className="max-w-md p-4 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+      
+      {/* Header: Title, Category & Rating */}
+      <Card.Header className="flex flex-col items-start gap-2">
+        
+        {/* Top row with Category and Rating */}
+        <div className="flex justify-between w-full items-center">
+          <span className="text-xs font-bold text-primary uppercase tracking-wider">
+            {category}
+          </span>
+          <span className="text-sm font-medium flex items-center gap-1">
+            ⭐ {rating}
+          </span>
+        </div>
+
+        {/* Title and Author Info */}
+        <div className="flex flex-col gap-1">
+            <Card.Title className="text-xl font-semibold text-gray-900">
+            {title}
+            </Card.Title>
+            <p className="text-sm text-gray-500 font-medium">
+            by {author} • {publishedYear}
+            </p>
+        </div>
       </Card.Header>
-      <Card.Footer>
+
+      {/* Body: Description & Price */}
+      <div className="px-3 py-2 mt-2">
+        <Card.Description className="text-sm text-gray-600 leading-relaxed">
+          {description}
+        </Card.Description>
+        
+        <div className="mt-4 font-bold text-2xl text-gray-900">
+          ৳{price}
+        </div>
+      </div>
+
+      {/* Footer: Conditional Action Button */}
+      <Card.Footer className="mt-4">
         <Link
-          aria-label="Go to Acme Creator Hub (opens in new tab)"
-          href="https://heroui.com"
-          rel="noopener noreferrer"
-          target="_blank"
+          href={inStock ? "/checkout" : "#"}
+          className={`w-full text-center py-2.5 rounded-xl font-medium transition ${
+            inStock 
+              ? "bg-primary text-white hover:bg-primary/90" 
+              : "bg-gray-200 text-gray-500 cursor-not-allowed pointer-events-none"
+          }`}
         >
-          Creator Hub
-          <Link.Icon aria-hidden="true" />
+          {inStock ? "Add to Cart" : "Out of Stock"}
         </Link>
       </Card.Footer>
+
     </Card>
   );
 }
+export default BookCard;
