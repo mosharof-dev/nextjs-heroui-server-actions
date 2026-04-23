@@ -24,9 +24,7 @@ const NavBar = () => {
               Books
             </Link>
           </li>
-          <li>
-            <Link href="#">Pricing</Link>
-          </li>
+         
         </ul>
         <div>
               <ThemeSwitch/>
