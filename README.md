@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 📘 Next.js Practice (HeroUI + Server Actions)
 
-## Getting Started
+This repository contains my hands-on practice while learning modern Next.js (App Router) concepts.
+It focuses on UI integration, data handling, and server-side logic using the latest features.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 What I Practiced
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* ⚡ Setting up HeroUI in Next.js
+* 🎴 Rendering UI components with fetched data (cards, lists)
+* 🧭 Building a Navbar and applying global theme
+* 🌗 Theme toggle (light/dark mode) and modal interaction
+* ⚙️ Introduction to Server Actions
+* 📤 Sending form data to Server Actions
+* 🔄 Revalidation after data mutation
+* ⚠️ Error handling in Server Actions
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🧠 Learning Focus
 
-## Learn More
+This is not a complete project.
+Instead, it is a collection of small practice implementations to understand:
 
-To learn more about Next.js, take a look at the following resources:
+* App Router workflow
+* Server vs Client components
+* Data flow in Next.js
+* Full-stack behavior without separate backend
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛠️ Tech Stack
 
-## Deploy on Vercel
+* Next.js (App Router)
+* React
+* HeroUI
+* JavaScript
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📂 Structure
+
+Each file/component represents a specific concept I practiced.
+Code is kept simple and focused on learning rather than production-ready structure.
+
+---
+
+## 🎯 Goal
+
+To build a strong foundation in Next.js full-stack development
+by practicing real-world concepts step by step.
+
+---
+
+## 📌 Note
+
+This repository is part of my learning journey.
+More structured and production-level projects will be added soon 🚀
